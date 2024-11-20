@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.banner{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    /* background-image: url(images/oil-drops-water-coloured-background.jpg); */
+    background: linear-gradient(to right, 
+    rgba(255, 0, 0, 0.8) 0%,      /* Pepsi/Coca-Cola Red */
+    rgb(76, 63, 63) 20%,         /* Solid Black */
+    rgb(92, 78, 78) 80%,         /* Solid Black */
+    rgba(0, 75, 147, 1) 100%     /* Pepsi Blue */
+);
+
+  
+    
+}
+.product{
+    position: absolute;
+    height: 380px;
+    width: 200px;  
+   left: 50%;
+   transform: translateX(-50%);
+   transition: 0.7s;
+   z-index: 1;
+   bottom: 100px;
+   --left:-50px;
+   display: flex;
+   
+   
+  
+
+}
+.banner .product .bottle{
+    background:url(images/dqadAJ5b.jpg) var(--left)  0, 
+               url(images/file.png);
+    background-size: auto 100%;
+    width: 200px;
+    aspect-ratio: 2 / 3.9;
+    background-blend-mode: multiply;
+    mask-image: url(images/file.png);
+    mask-size: auto 100%;
+    transition: 0.7s;
+    position: absolute;
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
+    
+    
+}
+.banner .product .bottle2{
+    background:url(images/cococola.jpg ) var(--left)  0, 
+               url(images/file.png);
+    background-size: auto 100%;
+    width: 200px;
+    aspect-ratio: 2 / 3.9;
+    background-blend-mode: multiply;
+    mask-image: url(images/file.png);
+    mask-size: auto 100%;
+    transition: 0.9s;
+    position: absolute;
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.banner .product:hover{
+  --left:-1060px;
+  transform: translateX(-50%) translateY(-100px);
+}
+.banner .product .bottle2{
+    opacity: 0;
+}
+.banner .product:hover .bottle2{
+    opacity: 1;
+}
