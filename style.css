@@ -27,7 +27,7 @@
    transform: translateX(-50%);
    transition: 0.7s;
    z-index: 1;
-   bottom: 100px;
+   bottom: 80px;
    --left:-50px;
    display: flex;
    
@@ -74,13 +74,4 @@
     opacity: 1;
 }
 
-@media (hover: none) and (pointer: coarse) {
-    .banner .product:hover {
-        --left: -50px; /* Reset to original state */
-        transform: translateX(-50%); /* Remove translateY animation */
-    }
-    
-    .banner .product .bottle2 {
-        opacity: 0; /* Reset opacity */
-    }
-}
+
