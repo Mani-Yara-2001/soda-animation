@@ -1,3 +1,4 @@
+
 *{
     margin: 0px;
     padding: 0px;
@@ -71,4 +72,15 @@
 }
 .banner .product:hover .bottle2{
     opacity: 1;
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .banner .product:hover {
+        --left: -50px; /* Reset to original state */
+        transform: translateX(-50%); /* Remove translateY animation */
+    }
+    
+    .banner .product .bottle2 {
+        opacity: 0; /* Reset opacity */
+    }
 }
